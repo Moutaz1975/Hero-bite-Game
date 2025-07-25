@@ -1008,7 +1008,8 @@
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
                     },
-                    body: 'action=test'
+                    body: new URLSearchParams({
+                      action: 'test'
                 });
 
                 if (response.ok) {
